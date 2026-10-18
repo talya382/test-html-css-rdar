@@ -25,10 +25,27 @@ nav li {
     color: #308A41;
 }
 
+.scurity {
+    border-radius: 50px;
+}
+
 #button-sucre {
+    width: 150px;
+    position: relative;
     border: 3px #1A4C24 solid;
     border-radius: 60px;
     padding: 8px;
+}
+
+#button-sucre-point {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #22ff44;
+    box-shadow: 0 0 8px #22ff44;
+
+
 }
 
 .section-radar {
@@ -48,7 +65,7 @@ nav li {
 }
 
 .radar {
-    position: relative; 
+    position: relative;
     overflow: hidden;
     top: 45%;
     left: 12%;
@@ -66,15 +83,17 @@ nav li {
     background-size: 100%, 218px 218px, 218px 218px, 100%;
     border: 1px #12AA3B solid;
 }
-.point{
+
+.point {
     position: absolute;
     width: 8px;
     height: 8px;
     border-radius: 50%;
     background: #22ff44;
     box-shadow: 0 0 8px #22ff44;
-    /* transform: translate(-50%, -50%); */
+
 }
+
 #h1-rdar1 {
     position: absolute;
     top: 90px;
@@ -344,6 +363,7 @@ progress {
 }
 
 #div-p {
+    position: relative;
     width: 90%;
     display: flex;
     text-align: center;
@@ -353,6 +373,17 @@ progress {
     background-color: #27121B;
     color: #A32340;
     margin-top: 10px;
+}
+
+.div-p-point {
+    position: absolute;
+    background-color: #A32340;
+    color: #c86a80;
+    top: 8px;
+    left: 16px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
 }
 
 footer {
@@ -408,8 +439,8 @@ footer {
     color: #12AA3B;
 }
 
-.nav-footer li:target {
-    border-bottom: #12AA3B;
+.nav-footer li:hover {
+    border-bottom:2px #12AA3B solid;
 }
 
 @keyframes sweep {
